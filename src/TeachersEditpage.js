@@ -52,7 +52,7 @@ export function TeachersEditpage({teacherlist}) {
         teacher[0].email=email
         teacher[0].mobileno=mobileno
         teacher[0].address=address
-        navigate('/')
+        navigate('/teacher-studentCRUD')
       }}>Update</button>
     </div>
   );

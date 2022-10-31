@@ -76,7 +76,7 @@ function App() {
           <div className='collapse navbar-collapse' id='navbarContent'>
             <ul className='navbar-nav'>
               <li className='nav-item'>
-                <Link to="/" className='nav-link'>Home</Link>
+                <Link to="/teacher-studentCRUD" className='nav-link'>Home</Link>
               </li>
               <li className='nav-item'>
               <Link to="/teacherpage" className='nav-link'>Teacher</Link>
@@ -89,7 +89,7 @@ function App() {
         </div>
       </nav>
       <Routes>
-        <Route path='/' element={<HomePage teacherlist={teacherlist} setTeacherlist={setTeacherlist} studentlist={studentlist} setStudentlist={setStudentlist} />}/>
+        <Route path='/teacher-studentCRUD' element={<HomePage teacherlist={teacherlist} setTeacherlist={setTeacherlist} studentlist={studentlist} setStudentlist={setStudentlist} />}/>
         <Route path='/adminpage' element={<AdminPage/>}/>
         <Route path='/teacherpage' element={<TeacherPage teacherlist={teacherlist}/>}/>
         <Route path='/studentpage' element={<StudentPage studentlist={studentlist}/>}/>
@@ -98,8 +98,8 @@ function App() {
         <Route path='/teacherdashboard/:usernme' element={<TeachersDashboard teacherlist={teacherlist}/>} />
         <Route path='/studentdashboard/:usernme' element={<StudentDashboard studentlist={studentlist}/>} />
         <Route path='*' element={<Pagenotfound/>} />
-        <Route path='/homepage/viewteachers/:firstnme' element={<TeachersEditpage teacherlist={teacherlist} />} />
-        <Route path='/homepage/viewstudents/:firstnme' element={<StudentsEditpage studentlist={studentlist} />} />
+        <Route path='/teacher-studentCRUD/viewteachers/:firstnme' element={<TeachersEditpage teacherlist={teacherlist} />} />
+        <Route path='/teacher-studentCRUD/viewstudents/:firstnme' element={<StudentsEditpage studentlist={studentlist} />} />
       </Routes>
 
     </div>

@@ -55,7 +55,7 @@ export function StudentsEditpage({ studentlist }) {
         student[0].email=email
         student[0].rollno=rollno
         student[0].address=address
-        navigate('/')
+        navigate('/teacher-studentCRUD')
       }}>Update</button>
     </div>
   );
