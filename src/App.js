@@ -69,7 +69,7 @@ function App() {
     <div>
       <nav className='navbar navbar-expand navbar-dark bg-dark'>
         <div className='container-fluid'>
-          <a className='navbar-brand'>App</a>
+          <a className='navbar-brand'>Teachers-Students CRUD</a>
           <button className='navbar-toggler' data-bs-toggle='collapse' data-bs-target='#navbarContent' >
             <span className='navbar-toggler-icon'></span>
           </button>
