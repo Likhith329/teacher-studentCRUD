@@ -20,7 +20,7 @@ export function TeacherPage({teacherlist}) {
 
       <div className='password'>
         <div className='txt'>Password</div>
-      <input type={'text'} className='form-control passwordInput' placeholder='Enter password' onChange={(event)=>{setPassword(event.target.value)}} ></input>
+      <input type={'password'} className='form-control passwordInput' placeholder='Enter password' onChange={(event)=>{setPassword(event.target.value)}} ></input>
       </div>
 
       <button className='btn btn-warning loginbtn' onClick={()=>{
