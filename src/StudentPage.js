@@ -13,7 +13,7 @@ export function StudentPage({studentlist}) {
   return (
     <div>
       <div className="container studentcont">
-        <h1>Welcome to the students page!</h1>
+        <h1>Welcome to the students page</h1>
 
         <div className='username'>
           <div className='txt'>Username</div>
