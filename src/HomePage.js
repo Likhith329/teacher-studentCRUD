@@ -64,7 +64,7 @@ export function HomePage({teacherlist,setTeacherlist,studentlist,setStudentlist}
                   <td>{teacher.address}</td>
                   <td className='actionbtn'>
                     <button className='btn btn-danger' onClick={()=>{
-                      navigate(`/homepage/viewteachers/${teacher.firstname}`)
+                      navigate(`/teacher-studentCRUD/viewteachers/${teacher.firstname}`)
                     }}>Edit</button>
                     <button className='btn btn-danger' onClick={()=>{
                        setTeacherlist([...teacherlist.slice(0,index),...teacherlist.slice(index+1,teacherlist.length)])
@@ -98,7 +98,7 @@ export function HomePage({teacherlist,setTeacherlist,studentlist,setStudentlist}
                   <td>{student.address}</td>
                   <td className='actionbtn'>
                     <button className='btn btn-danger' onClick={()=>{
-                      navigate(`/homepage/viewstudents/${student.firstname}`)
+                      navigate(`/teacher-studentCRUD/viewstudents/${student.firstname}`)
                     }}>Edit</button>
                     <button className='btn btn-danger' onClick={()=>{
                        setStudentlist([...studentlist.slice(0,index),...studentlist.slice(index+1,studentlist.length)])
